@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODTRIP - 검색 결과</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="mobile-container search-page">
+      <!-- Search Header -->
+      <div class="search-header">
+        <div class="search-nav">
+          <button type="button" class="back-button">
+            <img src="./images/ic-left.svg" alt="back" />
+          </button>
+        </div>
+
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="여행, 어디로 떠나시나요?"
+            class="search-input"
+            value=""
+          />
+        </div>
+
+        <button type="button" class="search-button">
+          <img src="./images/ic-search.svg" alt="search" />
+        </button>
+      </div>
+
+      <!-- Search Tabs -->
+      <div class="search-tabs">
+        <button type="button" class="tab-button active">해외도시</button>
+        <button type="button" class="tab-button">국내도시</button>
+      </div>
+
+      <!-- Filter Tags -->
+      <div class="filter-section">
+        <div class="filter-tags">
+          <button type="button" class="filter-tag active">전체</button>
+          <button type="button" class="filter-tag">일본</button>
+          <button type="button" class="filter-tag">동남아시아</button>
+          <button type="button" class="filter-tag">남태평양</button>
+          <button type="button" class="filter-tag">유럽</button>
+          <button type="button" class="filter-tag">미주</button>
+          <button type="button" class="filter-tag">중남미</button>
+        </div>
+      </div>
+
+      <!-- Search Results -->
+      <div class="search-results">
+        <div class="results-section">
+          <h3 class="section-title">일본</h3>
+
+          <div class="city-list">
+            <!-- 도쿄 -->
+            <div class="city-item">
+              <div class="city-info">
+                <div class="city-image">
+                  <img src="./images/local-cate01.png" alt="도쿄" />
+                </div>
+                <div class="city-details">
+                  <h4 class="city-name">도쿄</h4>
+                  <p class="city-description">
+                    도쿄, 하코네, 요코하마, 가마쿠라
+                  </p>
+                </div>
+              </div>
+              <button type="button" class="select-button">선택</button>
+            </div>
+
+            <!-- 후쿠오카 -->
+            <div class="city-item">
+              <div class="city-info">
+                <div class="city-image">
+                  <img src="./images/local-cate02.png" alt="후쿠오카" />
+                </div>
+                <div class="city-details">
+                  <h4 class="city-name">후쿠오카</h4>
+                  <p class="city-description">
+                    후쿠오카, 유후인, 벳푸, 다자이후
+                  </p>
+                </div>
+              </div>
+              <button type="button" class="select-button">선택</button>
+            </div>
+
+            <!-- 오사카 -->
+            <div class="city-item">
+              <div class="city-info">
+                <div class="city-image">
+                  <img src="./images/local-cate03.png" alt="오사카" />
+                </div>
+                <div class="city-details">
+                  <h4 class="city-name">오사카</h4>
+                  <p class="city-description">오사카, 교토, 나라, 고베</p>
+                </div>
+              </div>
+              <button type="button" class="select-button">선택</button>
+            </div>
+
+            <!-- 삿포로 -->
+            <div class="city-item">
+              <div class="city-info">
+                <div class="city-image">
+                  <img src="./images/local-cate04.png" alt="삿포로" />
+                </div>
+                <div class="city-details">
+                  <h4 class="city-name">삿포로</h4>
+                  <p class="city-description">삿포로, 오타루, 비에이, 후라노</p>
+                </div>
+              </div>
+              <button type="button" class="select-button">선택</button>
+            </div>
+
+            <!-- 오키나와 -->
+            <div class="city-item">
+              <div class="city-info">
+                <div class="city-image">
+                  <img src="./images/local-cate01.png" alt="오키나와" />
+                </div>
+                <div class="city-details">
+                  <h4 class="city-name">오키나와</h4>
+                  <p class="city-description">나하, 온나손, 차탄, 만좌모</p>
+                </div>
+              </div>
+              <button type="button" class="select-button">선택</button>
+            </div>
+
+            <!-- 나고야 -->
+            <div class="city-item">
+              <div class="city-info">
+                <div class="city-image">
+                  <img src="./images/local-cate02.png" alt="나고야" />
+                </div>
+                <div class="city-details">
+                  <h4 class="city-name">나고야</h4>
+                  <p class="city-description">
+                    나고야, 다카야마, 시라카와고, 게로 온천
+                  </p>
+                </div>
+              </div>
+              <button type="button" class="select-button">선택</button>
+            </div>
+
+            <!-- 교토 -->
+            <div class="city-item">
+              <div class="city-info">
+                <div class="city-image">
+                  <img src="./images/local-cate03.png" alt="교토" />
+                </div>
+                <div class="city-details">
+                  <h4 class="city-name">교토</h4>
+                  <p class="city-description">
+                    기요미즈데라, 아라시야마, 금각사, 기온
+                  </p>
+                </div>
+              </div>
+              <button type="button" class="select-button">선택</button>
+            </div>
+
+            <!-- 히로시마 -->
+            <div class="city-item">
+              <div class="city-info">
+                <div class="city-image">
+                  <img src="./images/local-cate04.png" alt="히로시마" />
+                </div>
+                <div class="city-details">
+                  <h4 class="city-name">히로시마</h4>
+                  <p class="city-description">
+                    히로시마, 미야지마, 오노미치, 구레
+                  </p>
+                </div>
+              </div>
+              <button type="button" class="select-button">선택</button>
+            </div>
+
+            <!-- 가나자와 -->
+            <div class="city-item">
+              <div class="city-info">
+                <div class="city-image">
+                  <img src="./images/local-cate01.png" alt="가나자와" />
+                </div>
+                <div class="city-details">
+                  <h4 class="city-name">가나자와</h4>
+                  <p class="city-description">
+                    가나자와, 겐로쿠엔, 히가시 차야, 오미초 시장
+                  </p>
+                </div>
+              </div>
+              <button type="button" class="select-button">선택</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 탭 전환 기능
+      const tabButtons = document.querySelectorAll(".tab-button");
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          tabButtons.forEach((btn) => btn.classList.remove("active"));
+          button.classList.add("active");
+        });
+      });
+
+      // 필터 태그 기능
+      const filterTags = document.querySelectorAll(".filter-tag");
+      filterTags.forEach((tag) => {
+        tag.addEventListener("click", () => {
+          filterTags.forEach((t) => t.classList.remove("active"));
+          tag.classList.add("active");
+        });
+      });
+
+      // 도시 선택 기능
+      const selectButtons = document.querySelectorAll(".select-button");
+      selectButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const cityName = button
+            .closest(".city-item")
+            .querySelector(".city-name").textContent;
+          console.log("선택된 도시:", cityName);
+          // 여기에 선택 로직 추가
+        });
+      });
+
+      // 뒤로 가기 버튼
+      const backButton = document.querySelector(".back-button");
+      backButton.addEventListener("click", () => {
+        window.history.back();
+      });
+
+      // 검색 기능
+      const searchButton = document.querySelector(".search-button");
+      const searchInput = document.querySelector(".search-input");
+
+      searchButton.addEventListener("click", () => {
+        const searchTerm = searchInput.value.trim();
+        if (searchTerm) {
+          console.log("검색:", searchTerm);
+          // 여기에 검색 로직 추가
+        }
+      });
+
+      searchInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          searchButton.click();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODTRIP - 검색</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="mobile-container search-page">
+      <!-- Search Header -->
+      <div class="search-header">
+        <div class="search-nav">
+          <button type="button" class="back-button">
+            <img src="./images/ic-left.svg" alt="back" />
+          </button>
+        </div>
+
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="도시, 장소, 메뉴 검색"
+            class="search-input"
+          />
+        </div>
+        <button type="button" class="search-button">
+          <img src="./images/ic-search.svg" alt="search" />
+        </button>
+      </div>
+
+      <!-- Popular Search Section -->
+      <div class="popular-search-section">
+        <h3 class="section-title">인기 검색어</h3>
+
+        <div class="search-tags">
+          <button type="button" class="search-tag">오사카</button>
+          <button type="button" class="search-tag">제주도</button>
+          <button type="button" class="search-tag">삿포로 스시</button>
+          <button type="button" class="search-tag">후쿠오카 맛집</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 검색 기능 추가
+      const searchInput = document.querySelector(".search-input");
+      const searchTags = document.querySelectorAll(".search-tag");
+      const backButton = document.querySelector(".back-button");
+
+      // 검색 태그 클릭 시 검색어 입력
+      searchTags.forEach((tag) => {
+        tag.addEventListener("click", () => {
+          searchInput.value = tag.textContent;
+          searchInput.focus();
+        });
+      });
+
+      // 뒤로 가기 버튼
+      backButton.addEventListener("click", () => {
+        window.history.back();
+      });
+
+      // 엔터 키로 검색
+      searchInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          const searchTerm = e.target.value.trim();
+          if (searchTerm) {
+            console.log("검색:", searchTerm);
+            // 여기에 검색 로직 추가
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

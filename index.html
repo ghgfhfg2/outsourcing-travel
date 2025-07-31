@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODTRIP - 맛집 여행</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="mobile-container">
+      <!-- Header -->
+      <div class="header">
+        <div class="header-left">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+          <div class="location">
+            <div class="location-icon">
+              <img src="./images/ic-location.svg" alt="location" />
+            </div>
+            <span>다낭</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <button
+            type="button"
+            class="header-icon"
+            onclick="window.location.href='search_2.html'"
+          >
+            <img src="./images/ic-earth.svg" alt="earth" />
+          </button>
+          <button
+            type="button"
+            class="header-icon"
+            onclick="window.location.href='search_1.html'"
+          >
+            <img src="./images/ic-search.svg" alt="search" />
+          </button>
+          <button type="button" class="header-icon profile-icon">
+            <img src="./images/profile.png" alt="profile" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Food Categories -->
+      <div class="food-categories">
+        <div class="category-item">
+          <a href="#" class="category-icon">🍜</a>
+          <a href="#" class="category-name">쌀국수</a>
+        </div>
+        <div class="category-item">
+          <a href="#" class="category-icon">🥖</a>
+          <a href="#" class="category-name">반미</a>
+        </div>
+        <div class="category-item">
+          <a href="#" class="category-icon">🦞</a>
+          <a href="#" class="category-name">해산물</a>
+        </div>
+        <div class="category-item">
+          <a href="#" class="category-icon">🥗</a>
+          <a href="#" class="category-name">샐러드</a>
+        </div>
+        <div class="category-item">
+          <a href="#" class="category-icon">🍺</a>
+          <a href="#" class="category-name">루프탑</a>
+        </div>
+        <div class="category-item">
+          <a href="#" class="category-icon">🍖</a>
+          <a href="#" class="category-name">분짜</a>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Trip Completion Message -->
+        <div class="trip-message">
+          <div class="message-text">
+            <div class="message-title">
+              <span>50일 전</span> 맛집 탐방이 끝났어요!
+            </div>
+            <div class="message-subtitle">다음 여행 맛집을 골라 볼까요?</div>
+          </div>
+        </div>
+
+        <!-- Recommendation Cards Swiper -->
+        <div class="recommendation-cards-container">
+          <div class="recommendation-cards swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide recommendation-card">
+                <div class="card-image">
+                  <img src="./images/sample-food.png" alt="" />
+                </div>
+                <div class="card-overlay">
+                  <div class="card-author">
+                    <div class="author-avatar">
+                      <img src="./images/ic-avatar.svg" alt="profile" />
+                    </div>
+                    <span>홍길동</span>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-title">
+                      도쿄 긴자 시내에 있는 맛집 BEST 3
+                    </div>
+                    <div class="card-location">도쿄</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide recommendation-card">
+                <div class="card-image">
+                  <img src="./images/sample-food2.png" alt="" />
+                </div>
+                <div class="card-overlay">
+                  <div class="card-author">
+                    <div class="author-avatar">
+                      <img src="./images/ic-avatar.svg" alt="profile" />
+                    </div>
+                    <span>홍길동</span>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-title">오사카 도톤보리 숨은 맛집</div>
+                    <div class="card-location">오사카</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide recommendation-card">
+                <div class="card-image">
+                  <img src="./images/sample-food.png" alt="" />
+                </div>
+                <div class="card-overlay">
+                  <div class="card-author">
+                    <div class="author-avatar">
+                      <img src="./images/ic-avatar.svg" alt="profile" />
+                    </div>
+                    <span>홍길동</span>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-title">교토 전통 맛집 TOP 5</div>
+                    <div class="card-location">교토</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide recommendation-card">
+                <div class="card-image">
+                  <img src="./images/sample-food2.png" alt="" />
+                </div>
+                <div class="card-overlay">
+                  <div class="card-author">
+                    <div class="author-avatar">
+                      <img src="./images/ic-avatar.svg" alt="profile" />
+                    </div>
+                    <span>김맛집</span>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-title">후쿠오카 라멘 맛집 투어</div>
+                    <div class="card-location">후쿠오카</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Benefits Banner -->
+        <div class="benefits-banner">
+          <a href="#" class="banner-link">
+            <img src="./images/banner-gift.png" alt="gift_box" />
+          </a>
+        </div>
+
+        <!-- Popular Categories -->
+        <div class="popular-categories">
+          <div class="section-title">내 주변 인기 카테고리별 맛집</div>
+          <div class="category-circles swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide circle-item">
+                <div class="circle-image">
+                  <img src="./images/local-cate01.png" alt="도쿄" />
+                </div>
+                <div class="circle-name">도쿄 맛집</div>
+              </div>
+              <div class="swiper-slide circle-item">
+                <div class="circle-image">
+                  <img src="./images/local-cate02.png" alt="오사카" />
+                </div>
+                <div class="circle-name">오사카 맛집</div>
+              </div>
+              <div class="swiper-slide circle-item">
+                <div class="circle-image">
+                  <img src="./images/local-cate03.png" alt="교토" />
+                </div>
+                <div class="circle-name">교토 맛집</div>
+              </div>
+              <div class="swiper-slide circle-item">
+                <div class="circle-image">
+                  <img src="./images/local-cate04.png" alt="오키나와" />
+                </div>
+                <div class="circle-name">오키나와 맛집</div>
+              </div>
+              <div class="swiper-slide circle-item">
+                <div class="circle-image">
+                  <img src="./images/local-cate03.png" alt="교토" />
+                </div>
+                <div class="circle-name">교토 맛집</div>
+              </div>
+              <div class="swiper-slide circle-item">
+                <div class="circle-image">
+                  <img src="./images/local-cate04.png" alt="오키나와" />
+                </div>
+                <div class="circle-name">오키나와 맛집</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Useful Info -->
+        <div class="useful-info">
+          <div class="section-title">지금 유용한 정보와 혜택!</div>
+          <div class="info-cards swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide info-card">
+                <div class="info-image">
+                  <img src="./images/info01.png" alt="정보" />
+                </div>
+                <div class="info-overlay">
+                  <div class="info-title">
+                    추운 곳에서 뜨뜻한 음식 먹기 좋은 곳! 삿포로 말고 '이 곳'
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide info-card">
+                <div class="info-image">
+                  <img src="./images/info02.png" alt="정보" />
+                </div>
+                <div class="info-overlay">
+                  <div class="info-title">
+                    추운 곳에서 뜨뜻한 음식 먹기 좋은 곳! 삿포로 말고 '이 곳'
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide info-card">
+                <div class="info-image">
+                  <img src="./images/info03.png" alt="정보" />
+                </div>
+                <div class="info-overlay">
+                  <div class="info-title">
+                    추운 곳에서 뜨뜻한 음식 먹기 좋은 곳! 삿포로 말고 '이 곳'
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommended Restaurants -->
+        <div class="recommended-restaurants">
+          <div class="section-header">
+            <div class="section-title">내 주변 추천 맛집!</div>
+            <a href="#" class="more-link">더보기</a>
+          </div>
+          <div class="restaurant-list">
+            <div class="restaurant-item">
+              <div class="restaurant-image">
+                <button type="button" class="restaurant-like-button">
+                  <img src="./images/ic-like.svg" alt="like" />
+                </button>
+                <img src="./images/recomand01.png" alt="Madam Khanh" />
+              </div>
+              <div class="restaurant-info">
+                <div class="restaurant-name">
+                  Madam Khanh - The Banh Mi Queen
+                </div>
+                <div class="restaurant-rating">
+                  <span class="star">
+                    <img src="./images/ic-star.svg" alt="star" />
+                  </span>
+                  <span class="rating-text">4.6 (1926)•0.8km</span>
+                  <button type="button" class="share-button">
+                    <img src="./images/ic-share.svg" alt="share" />
+                  </button>
+                </div>
+                <div class="restaurant-tags">
+                  <span class="tag primary">베트남 전통</span>
+                  <span class="tag success">예약가능</span>
+                  <span class="tag success">배달가능</span>
+                  <span class="tag gray">현지맛집</span>
+                  <span class="tag gray">저렴한 가격</span>
+                </div>
+              </div>
+            </div>
+            <div class="restaurant-item">
+              <div class="restaurant-image">
+                <button type="button" class="restaurant-like-button">
+                  <img src="./images/ic-like.svg" alt="like" />
+                </button>
+                <img src="./images/recomand02.png" alt="Madam Khanh" />
+              </div>
+              <div class="restaurant-info">
+                <div class="restaurant-name">
+                  Madam Khanh - The Banh Mi Queen
+                </div>
+                <div class="restaurant-rating">
+                  <span class="star">
+                    <img src="./images/ic-star.svg" alt="star" />
+                  </span>
+                  <span class="rating-text">4.6 (1926)•0.8km</span>
+                  <button type="button" class="share-button">
+                    <img src="./images/ic-share.svg" alt="share" />
+                  </button>
+                </div>
+                <div class="restaurant-tags">
+                  <span class="tag primary">베트남 전통</span>
+                  <span class="tag success">예약가능</span>
+                  <span class="tag success">배달가능</span>
+                  <span class="tag gray">현지맛집</span>
+                  <span class="tag gray">저렴한 가격</span>
+                </div>
+              </div>
+            </div>
+            <div class="restaurant-item">
+              <div class="restaurant-image">
+                <button type="button" class="restaurant-like-button">
+                  <img src="./images/ic-like.svg" alt="like" />
+                </button>
+                <img src="./images/recomand03.png" alt="Madam Khanh" />
+              </div>
+              <div class="restaurant-info">
+                <div class="restaurant-name">
+                  Madam Khanh - The Banh Mi Queen
+                </div>
+                <div class="restaurant-rating">
+                  <span class="star">
+                    <img src="./images/ic-star.svg" alt="star" />
+                  </span>
+                  <span class="rating-text">4.6 (1926)•0.8km</span>
+                  <button type="button" class="share-button">
+                    <img src="./images/ic-share.svg" alt="share" />
+                  </button>
+                </div>
+                <div class="restaurant-tags">
+                  <span class="tag primary">베트남 전통</span>
+                  <span class="tag success">예약가능</span>
+                  <span class="tag gray">현지맛집</span>
+                  <span class="tag gray">저렴한 가격</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Magazine Section -->
+        <div class="magazine-section">
+          <div class="section-title">이번 주 맛집 매거진</div>
+          <div class="magazine-cards swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide magazine-card large">
+                <div class="magazine-image">
+                  <img src="./images/magazine01.png" alt="매거진" />
+                </div>
+                <div class="magazine-content">
+                  <div class="magazine-title">
+                    연차 필요 없는 1박 2일<br />국내 여행 맛집
+                  </div>
+                  <div class="magazine-subtitle">
+                    주말에 훌쩍 떠나기 좋은 도시 4
+                  </div>
+                  <div class="magazine-author">
+                    <div class="author-avatar">
+                      <img src="./images/ic-avatar.svg" alt="" />
+                    </div>
+                    <span>푸드트립</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide magazine-card large">
+                <div class="magazine-image">
+                  <img src="./images/magazine02.png" alt="매거진" />
+                </div>
+                <div class="magazine-content">
+                  <div class="magazine-title">
+                    연차 필요 없는 1박 2일<br />국내 여행 맛집
+                  </div>
+                  <div class="magazine-subtitle">
+                    주말에 훌쩍 떠나기 좋은 도시 4
+                  </div>
+                  <div class="magazine-author">
+                    <div class="author-avatar">
+                      <img src="./images/ic-avatar.svg" alt="" />
+                    </div>
+                    <span>푸드트립</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Destination -->
+        <div class="featured-destination">
+          <div class="section-title">세상이 집중하고 있는 맛집 도시</div>
+          <div class="destination-cards swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide destination-card main">
+                <div class="destination-image">
+                  <img src="./images/focus01.png" alt="하와이" />
+                </div>
+                <div class="destination-content">
+                  <div class="destination-title">
+                    알로하! 낭만 가득한<br />맛집 여행지
+                  </div>
+                  <div class="destination-description">
+                    6월은 건기로, 하와이의 자연을 온전히 즐기기 가장 좋은
+                    시기이다. 특히 개성 강한 섬들과 알로하 무드가 가득한 로컬
+                    마켓에서 맛집 탐방을 즐겨보자. 하와이에서는 색다른 맛집들을
+                    쉽게 찾아볼 수 있다.
+                  </div>
+                  <div class="destination-tags">
+                    <span class="tag">8시간 소요</span>
+                    <span class="tag">색다른매력의섬</span>
+                    <span class="tag">다채로운먹거리</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide destination-card gallery">
+                <div class="gallery-title">📷 하와이 핫플레이스 엿보기</div>
+                <div class="gallery-grid">
+                  <div class="item i1"></div>
+                  <div class="item i2"></div>
+                  <div class="item i3"></div>
+                  <div class="item i4"></div>
+                  <div class="item i5"></div>
+                  <div class="item i6"></div>
+                  <div class="item i7"></div>
+                  <div class="item i8"></div>
+                  <div class="item i9"></div>
+                  <div class="item i10"></div>
+                  <div class="item i11"></div>
+                  <div class="item i12"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews-section">
+          <div class="section-header">
+            <div class="section-title">맛집 실시간 후기!</div>
+            <a href="#" class="more-link">더보기</a>
+          </div>
+          <div class="review-list">
+            <div class="review-item">
+              <div class="review-header">
+                <div class="reviewer-avatar">
+                  <img src="./images/ic-avatar.svg" alt="김여행러버" />
+                </div>
+                <div class="reviewer-info">
+                  <div class="reviewer-name">김여행러버</div>
+                  <div class="review-meta">Bánh Mì Phượng • 다낭• 2시간전</div>
+                </div>
+              </div>
+              <div class="review-images image-1">
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+              </div>
+              <div class="review-text">
+                정말 맛있어요! 현지 분위기도 좋고 가격도 합리적이에요. 다낭 오면
+                꼭 와보세요! 반미는 여기 진짜 맛있습니다 👍
+              </div>
+            </div>
+            <div class="review-item">
+              <div class="review-header">
+                <div class="reviewer-avatar">
+                  <img src="./images/ic-avatar.svg" alt="김여행러버" />
+                </div>
+                <div class="reviewer-info">
+                  <div class="reviewer-name">김여행러버</div>
+                  <div class="review-meta">Bánh Mì Phượng • 다낭• 2시간전</div>
+                </div>
+              </div>
+              <div class="review-images image-2">
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+              </div>
+              <div class="review-text">
+                정말 맛있어요! 현지 분위기도 좋고 가격도 합리적이에요. 다낭 오면
+                꼭 와보세요! 반미는 여기 진짜 맛있습니다 👍
+              </div>
+            </div>
+            <div class="review-item">
+              <div class="review-header">
+                <div class="reviewer-avatar">
+                  <img src="./images/ic-avatar.svg" alt="김여행러버" />
+                </div>
+                <div class="reviewer-info">
+                  <div class="reviewer-name">김여행러버</div>
+                  <div class="review-meta">Bánh Mì Phượng • 다낭• 2시간전</div>
+                </div>
+              </div>
+              <div class="review-images image-3">
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+              </div>
+              <div class="review-text">
+                정말 맛있어요! 현지 분위기도 좋고 가격도 합리적이에요. 다낭 오면
+                꼭 와보세요! 반미는 여기 진짜 맛있습니다 👍
+              </div>
+            </div>
+            <div class="review-item">
+              <div class="review-header">
+                <div class="reviewer-avatar">
+                  <img src="./images/ic-avatar.svg" alt="김여행러버" />
+                </div>
+                <div class="reviewer-info">
+                  <div class="reviewer-name">김여행러버</div>
+                  <div class="review-meta">Bánh Mì Phượng • 다낭• 2시간전</div>
+                </div>
+              </div>
+              <div class="review-images image-4">
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+              </div>
+              <div class="review-text">
+                정말 맛있어요! 현지 분위기도 좋고 가격도 합리적이에요. 다낭 오면
+                꼭 와보세요! 반미는 여기 진짜 맛있습니다 👍
+              </div>
+            </div>
+            <div class="review-item">
+              <div class="review-header">
+                <div class="reviewer-avatar">
+                  <img src="./images/ic-avatar.svg" alt="김여행러버" />
+                </div>
+                <div class="reviewer-info">
+                  <div class="reviewer-name">김여행러버</div>
+                  <div class="review-meta">Bánh Mì Phượng • 다낭• 2시간전</div>
+                </div>
+              </div>
+              <div class="review-images image-5">
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+                <div class="image-item">
+                  <img src="./images/food07.png" alt="반미" />
+                </div>
+              </div>
+              <div class="review-text">
+                정말 맛있어요! 현지 분위기도 좋고 가격도 합리적이에요. 다낭 오면
+                꼭 와보세요! 반미는 여기 진짜 맛있습니다 👍
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <div class="bottom-nav">
+        <div class="nav-item active">
+          <div class="nav-icon">
+            <img src="./images/ic-home.svg" alt="home" />
+          </div>
+          <div class="nav-label">홈</div>
+        </div>
+        <div class="nav-item" onclick="window.location.href='search_1.html'">
+          <div class="nav-icon">
+            <img src="./images/ic-bot-search.svg" alt="search" />
+          </div>
+          <div class="nav-label">검색</div>
+        </div>
+        <div class="nav-item" onclick="window.location.href='search_2.html'">
+          <div class="nav-icon">
+            <img src="./images/ic-bot-map.svg" alt="food" />
+          </div>
+          <div class="nav-label">맛집</div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon">
+            <img src="./images/ic-bot-my.svg" alt="profile" />
+          </div>
+          <div class="nav-label">MY</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
